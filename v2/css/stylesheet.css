@@ -1,0 +1,184 @@
+/* Main Area */
+.background {
+  font-family: 'Ubuntu', sans-serif;
+}
+.main-title {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 150px;
+  margin-bottom: 15px;
+  color: #66CFFF;
+}
+
+/*
+ * Menu Styling
+ */
+.menu {
+  z-index: 10;
+  margin-top: 25px;
+  position: fixed;
+}
+/* The bubbles of the menu */
+.menu-item {
+  height: 55px;
+  display: inline-block;
+  background: linear-gradient(to right, #6C5CED 5%, #66CFFF 600px);
+  background: -moz-linear-gradient(to right,  #6C5CED 5%, #66CFFF 600px);
+  background: -webkit-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: -o-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: -ms-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background-attachment: fixed;
+  z-index: 5;
+  color: white;
+  float: left;
+  border-radius: 55px;
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  max-width: 90%;
+  margin: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.wide-gradient {
+  background: linear-gradient(to right, #6C5CED 5%, #66CFFF 600px);
+  background: -moz-linear-gradient(to right,  #6C5CED 5%, #66CFFF 600px);
+  background: -webkit-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: -o-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: -ms-linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background: linear-gradient(to right,  #6C5CED 5%,#66CFFF 600px);
+  background-attachment: fixed;
+}
+
+/* 
+ * Menu Button Styling 
+ */
+input[type=checkbox] {
+  display: none;
+  pointer-events: all;
+}
+
+/* Uses :checked to detect when clicked and changes sibling elements */
+input[type=checkbox]:checked ~ .nav-button {
+  background-image: url(../images/close-menu.svg);
+}
+/* Expand the content submenu */
+input[type=checkbox]:checked ~ .nav-context-menu {
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  transition: all .4s ease;
+  width: 400px;
+}
+input[type=checkbox]:checked ~ .nav-tags-menu {
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  margin-left: 0;
+  transition: width .6s ease;
+  width: 221px;
+}
+input[type=checkbox]:checked ~ .nav-github-menu {
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  transition: margin-left .7s ease;
+  margin-left: 0;
+}
+
+/* Nav Button Styling*/
+.nav-button-component {
+  box-sizing: border-box;
+  position: absolute;
+  padding: 17.5px;
+  margin-top: 10px;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+}
+.nav-button {
+  z-index: 10;
+  background-image: url(../images/menu.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nav-button:hover {
+  cursor: pointer;
+}
+
+/* The context part of the menu which shows the directory */
+.nav-context-menu {
+  width: 55px;
+}
+.nav-context {
+  height: 55px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 55px;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 20px;
+  font-size: 2.0rem;
+  display: inline;
+}
+.nav-context-link {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+}
+.nav-context-link:hover {
+  color: white;
+  opacity: .5;
+}
+
+/* The menu bubble */
+.nav-tags-menu {
+  width: 55px;
+  margin-left: -65px;
+  box-shadow: none;
+}
+.menu-tags {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+  margin-right: 15px;
+  margin-left: 15px;
+  line-height: 55px;
+}
+.menu-tag {
+  display: inline;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.menu-tag-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+.menu-tag-link:hover {
+  color: white;
+  opacity: .5;
+}
+
+/* The github bubble */
+.nav-github {
+  display: block;
+  background-color: inherit;
+  background-attachment: fixed;
+  width: 55px;
+  height: 55px;
+}
+.nav-github-menu {
+  margin-left: -65px;
+  box-shadow: none;
+}
+.nav-github-img {
+  box-sizing: border-box;
+  padding: 7.25px;
+}
+
+
+
+
+
+
+
+

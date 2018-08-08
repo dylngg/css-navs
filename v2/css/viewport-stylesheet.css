@@ -1,0 +1,19 @@
+@media (max-width: 550px) {
+  /* Make the text more readable */
+  .nav-context {
+    font-size: 1.75rem;
+  }
+  
+  /* Manage menu flowing correctly */
+  .menu-item:nth-of-type(n+3) {
+    clear: both;
+  }
+  
+  /* Keep the timing the same since their all on different lines */
+  input[type=checkbox]:checked ~ .nav-github-menu {
+    transition: margin-left .4s ease;
+  }
+  input[type=checkbox]:checked ~ .nav-tags-menu {
+    transition: width .4s ease;
+  }
+}
