@@ -1,8 +1,10 @@
 @media (max-width: 550px) {
   /* Make the text more readable */
+/*
   .nav-context {
     font-size: 1.75rem;
   }
+*/
   
   /* Manage menu flowing correctly */
   .menu-item:nth-of-type(n+3) {

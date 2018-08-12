@@ -32,7 +32,7 @@
   z-index: 5;
   color: white;
   float: left;
-  border-radius: 55px;
+  border-radius: 27.5px;
   box-shadow: 0 0 15px rgba(0,0,0,.3);
   max-width: 90%;
   margin: 0;
@@ -71,12 +71,13 @@ input[type=checkbox]:checked ~ .nav-context-menu {
 input[type=checkbox]:checked ~ .nav-tags-menu {
   box-shadow: 0 0 15px rgba(0,0,0,.3);
   margin-left: 0;
-  transition: width .6s ease;
-  width: 221px;
+  transition: all .6s ease;
+  width: inherit;
+  height: inherit;
 }
 input[type=checkbox]:checked ~ .nav-github-menu {
   box-shadow: 0 0 15px rgba(0,0,0,.3);
-  transition: margin-left .7s ease;
+  transition: all .7s ease;
   margin-left: 0;
 }
 
@@ -136,10 +137,13 @@ input[type=checkbox]:checked ~ .nav-github-menu {
 .menu-tags {
   display: inline-block;
   list-style-type: none;
-  float: right;
+  float: left;
   margin-right: 15px;
   margin-left: 15px;
-  line-height: 55px;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 .menu-tag {
   display: inline;

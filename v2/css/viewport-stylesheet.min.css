@@ -1,1 +1,1 @@
-@media (max-width:550px){.nav-context{font-size:1.75rem}.menu-item:nth-of-type(n+3){clear:both}input[type=checkbox]:checked~.nav-github-menu{transition:margin-left .4s ease}input[type=checkbox]:checked~.nav-tags-menu{transition:width .4s ease}}
+@media (max-width:550px){.menu-item:nth-of-type(n+3){clear:both}input[type=checkbox]:checked~.nav-github-menu{transition:margin-left .4s ease}input[type=checkbox]:checked~.nav-tags-menu{transition:width .4s ease}}
